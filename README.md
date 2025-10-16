@@ -7,7 +7,7 @@ Os parâmetros utilizados no treinamento dos modelos foram obtidos via Grid Sear
 Após a validação cruzada, foi selecionada a melhor combinação de hiperparâmetros, que apresentou o melhor equilíbrio entre desempenho e generalização.
 Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na Hierárquica Local por Nó Pai.
 
-🔹 Parâmetros finais selecionados
+`🔹 Parâmetros finais selecionados`
 `XGB_PARAMS = {`
     `"objective": "binary:logistic",`
     `"eval_metric": "logloss",`        
@@ -16,7 +16,7 @@ Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na 
     `"n_estimators": 200,`
     `"subsample": 0.8,`
     `"colsample_bytree": 0.8`
-}
+`}`
 
 
 | 🧩 Parâmetro         | 💡 Função principal                                                                                                            |
