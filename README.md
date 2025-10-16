@@ -29,6 +29,17 @@ subsample	Proporção de amostras do conjunto de treino usada em cada árvore. R
 colsample_bytree	Proporção de colunas (features) usadas em cada árvore. Também ajuda a reduzir sobreajuste e aumentar a robustez.
 
 
+| 🧩 Parâmetro         | 💡 Função principal                                                                                                            |
+| :------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| **objective**        | Define o tipo de problema. <br>→ `"binary:logistic"` indica classificação binária, retornando probabilidades entre 0 e 1.      |
+| **eval_metric**      | Métrica de avaliação usada no treino. <br>→ `"logloss"` mede o erro entre a probabilidade prevista e o rótulo real.            |
+| **max_depth**        | Profundidade máxima das árvores. <br>→ Controla a complexidade do modelo e evita *overfitting*.                                |
+| **learning_rate**    | Taxa de aprendizado. <br>→ Define o quanto cada nova árvore influencia o modelo final.                                         |
+| **n_estimators**     | Número de árvores (iterações) no *boosting*. <br>→ Mais árvores aumentam a capacidade do modelo, mas também o tempo de treino. |
+| **subsample**        | Proporção de amostras usadas por árvore. <br>→ Introduz variabilidade e reduz *overfitting*.                                   |
+| **colsample_bytree** | Proporção de colunas (features) usadas por árvore. <br>→ Aumenta a diversidade entre as árvores e melhora a generalização.     |
+
+
 | Label              | Multilabel | Hierárquico |
 | :----------------- | :--------: | :---------: |
 | Hate.speech        |   0.5566   |    0.3561   |
