@@ -8,14 +8,14 @@ Após a validação cruzada, foi selecionada a melhor combinação de hiperparâ
 Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na Hierárquica Local por Nó Pai.
 
 🔹 Parâmetros finais selecionados
-XGB_PARAMS = {
-    "objective": "binary:logistic",
-    "eval_metric": "logloss",        
-    "max_depth": 4,
-    "learning_rate": 0.1,
-    "n_estimators": 200,
-    "subsample": 0.8,
-    "colsample_bytree": 0.8
+`XGB_PARAMS = {`
+    `"objective": "binary:logistic",`
+    `"eval_metric": "logloss",`        
+    `"max_depth": 4,`
+    `"learning_rate": 0.1,`
+    `"n_estimators": 200,`
+    `"subsample": 0.8,`
+    `"colsample_bytree": 0.8`
 }
 
 
