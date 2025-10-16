@@ -18,16 +18,6 @@ XGB_PARAMS = {
     "colsample_bytree": 0.8
 }
 
-📘 Descrição dos parâmetros
-Parâmetro
-objective	Define o tipo de problema. O valor "binary:logistic" indica uma tarefa de classificação binária, retornando probabilidades entre 0 e 1.
-eval_metric	Métrica usada durante o treinamento para avaliar a performance do modelo. O "logloss" mede o erro de previsão probabilística.
-max_depth	Profundidade máxima das árvores. Controla a complexidade do modelo — valores menores evitam sobreajuste (overfitting).
-learning_rate	Taxa de aprendizado (também conhecida como eta). Define o peso de cada nova árvore adicionada ao modelo. Valores menores tornam o aprendizado mais estável.
-n_estimators	Número total de árvores (iterações) geradas no processo de boosting.
-subsample	Proporção de amostras do conjunto de treino usada em cada árvore. Reduz sobreajuste ao introduzir variabilidade.
-colsample_bytree	Proporção de colunas (features) usadas em cada árvore. Também ajuda a reduzir sobreajuste e aumentar a robustez.
-
 
 | 🧩 Parâmetro         | 💡 Função principal                                                                                                            |
 | :------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
