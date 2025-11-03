@@ -82,6 +82,23 @@ XGB_PARAMS = {
     "reg_lambda": 0.31512291092719386,
     "reg_alpha": 0.03389975701017645
 }
+
+🔧 Hiperparâmetros Otimizados (Optuna)
+
+| Parâmetro          | Valor                 | Descrição breve                                   |
+| ------------------ | --------------------- | ------------------------------------------------- |
+| `objective`        | `binary:logistic`     | Função objetivo para classificação binária        |
+| `eval_metric`      | `logloss`             | Métrica de avaliação usada durante o treino       |
+| `max_depth`        | `4`                   | Profundidade máxima das árvores                   |
+| `learning_rate`    | `0.145192689133182`   | Taxa de aprendizado                               |
+| `n_estimators`     | `440`                 | Número de árvores (iterações do boosting)         |
+| `subsample`        | `0.5054945946218856`  | Proporção de amostras usadas em cada árvore       |
+| `colsample_bytree` | `0.747819692180028`   | Proporção de colunas usadas em cada árvore        |
+| `gamma`            | `1.1676055677106392`  | Penalização por divisão de nó (reduz overfitting) |
+| `min_child_weight` | `6`                   | Peso mínimo da soma de instâncias em um nó filho  |
+| `reg_lambda`       | `0.31512291092719386` | Regularização L2                                  |
+| `reg_alpha`        | `0.03389975701017645` | Regularização L1                                  |
+
 <img width="1400" height="600" alt="optuna" src="https://github.com/user-attachments/assets/fc80b6de-3bec-4ac3-bbf2-c56d503c080b" />
 
 
