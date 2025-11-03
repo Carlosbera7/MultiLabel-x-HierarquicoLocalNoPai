@@ -68,21 +68,6 @@ Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na 
 
 
 
-Utlizando o Optuna, pegando parametro medio em todos os folds :
-XGB_PARAMS = {
-    "objective": "binary:logistic",
-    "eval_metric": "logloss",        
-    "max_depth": 4,
-    "learning_rate":  0.145192689133182,
-    "n_estimators": 440,
-    "subsample": 0.5054945946218856,
-    "colsample_bytree": 0.747819692180028,
-    "gamma": 1.1676055677106392,
-    "min_child_weight" : 6,
-    "reg_lambda": 0.31512291092719386,
-    "reg_alpha": 0.03389975701017645
-}
-
 🔧 Hiperparâmetros Otimizados (Optuna)
 
 | Parâmetro          | Valor                 | Descrição breve                                   |
@@ -104,17 +89,21 @@ XGB_PARAMS = {
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Utlizando o melhor parametro por fold alcançado com xgboost : 
-max_depth,learning_rate,n_estimators,subsample,colsample_bytree,mean_f1,fold
-4,0.1,200,1.0,0.8,0.2817973555667631,1
-6,0.1,200,0.8,0.8,0.28113578179430776,2
-6,0.1,200,1.0,1.0,0.2794914767408236,3
-8,0.1,200,0.8,0.8,0.2776131860945636,4
-4,0.05,200,0.8,1.0,0.2754018388185612,5
-4,0.05,200,1.0,0.8,0.2744975391931213,6
-8,0.1,200,1.0,0.8,0.2737894858052957,7
-4,0.05,200,1.0,1.0,0.27344658123044957,8
-4,0.1,100,1.0,0.8,0.27283448020263446,9
-8,0.1,100,0.8,1.0,0.2697641592209305,10
+
+
+🧩 Melhores Parâmetros por Fold — XGBoost
+| Fold | `max_depth` | `learning_rate` | `n_estimators` | `subsample` | `colsample_bytree` |  `mean_f1` |
+| :--: | :---------: | :-------------: | :------------: | :---------: | :----------------: | :--------: |
+|   1  |      4      |       0.10      |       200      |     1.0     |         0.8        | **0.2818** |
+|   2  |      6      |       0.10      |       200      |     0.8     |         0.8        | **0.2811** |
+|   3  |      6      |       0.10      |       200      |     1.0     |         1.0        | **0.2795** |
+|   4  |      8      |       0.10      |       200      |     0.8     |         0.8        | **0.2776** |
+|   5  |      4      |       0.05      |       200      |     0.8     |         1.0        | **0.2754** |
+|   6  |      4      |       0.05      |       200      |     1.0     |         0.8        | **0.2745** |
+|   7  |      8      |       0.10      |       200      |     1.0     |         0.8        | **0.2738** |
+|   8  |      4      |       0.05      |       200      |     1.0     |         1.0        | **0.2734** |
+|   9  |      4      |       0.10      |       100      |     1.0     |         0.8        | **0.2728** |
+|  10  |      8      |       0.10      |       100      |     0.8     |         1.0        | **0.2698** |
+
 <img width="1400" height="600" alt="gridSearchFold" src="https://github.com/user-attachments/assets/e0201299-e4de-4a9f-9914-a6841146f20e" />
 
