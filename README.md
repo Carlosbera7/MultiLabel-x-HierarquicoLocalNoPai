@@ -84,8 +84,22 @@ Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na 
 | `reg_lambda`       | `0.31512291092719386` | Regularização L2                                  |
 | `reg_alpha`        | `0.03389975701017645` | Regularização L1                                  |
 
+params = {
+            "max_depth": trial.suggest_int("max_depth", 3, 10),
+            "learning_rate": trial.suggest_float("learning_rate", 0.01, 0.3, log=True),
+            "n_estimators": trial.suggest_int("n_estimators", 100, 500),
+            "subsample": trial.suggest_float("subsample", 0.5, 1.0),
+            "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 1.0),
+            "gamma": trial.suggest_float("gamma", 0, 5),
+            "min_child_weight": trial.suggest_int("min_child_weight", 1, 10),
+            "reg_lambda": trial.suggest_float("reg_lambda", 1e-2, 10.0, log=True),
+            "reg_alpha": trial.suggest_float("reg_alpha", 1e-3, 10.0, log=True),
+        }
+
 <img width="1400" height="600" alt="optuna" src="https://github.com/user-attachments/assets/fc80b6de-3bec-4ac3-bbf2-c56d503c080b" />
 
+optuna por fold : 
+<img width="1400" height="600" alt="optuna por fold" src="https://github.com/user-attachments/assets/1aa0ce76-3fd8-42b7-bfaa-c0dcaebbae5d" />
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
