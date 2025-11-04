@@ -19,6 +19,14 @@ Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na 
 `}`
 
 
+param_grid = {
+        "max_depth": [3, 6, 10],
+        "learning_rate": [0.01, 0.1, 0.3],
+        "n_estimators": [100, 200, 300, 400, 500],
+        "subsample": [0.5, 1.0],
+        "colsample_bytree": [0.5, 1.0]
+    }
+
 | 🧩 Parâmetro         | 💡 Função principal                                                                                                            |
 | :------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | **objective**        | Define o tipo de problema. <br>→ `"binary:logistic"` indica classificação binária, retornando probabilidades entre 0 e 1.      |
