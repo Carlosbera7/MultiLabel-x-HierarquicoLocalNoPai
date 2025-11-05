@@ -81,6 +81,10 @@ Grid Search :
 | 10   | 6         | 0.01          | 300          | 1.0       | 0.5              | 0.22553299717460945 |
 
 
+<img width="1400" height="600" alt="gridSearchFoldNew" src="https://github.com/user-attachments/assets/dfc4d645-662d-4b7a-87dd-531708ec84c5" />
+
+
+
 | Classe             | Multilabel (Optuna) | Hierárquico (Optuna) | Multilabel (GridSearch) | Hierárquico (GridSearch) |
 | ------------------ | ------------------: | -------------------: | ----------------------: | -----------------------: |
 | Black.people       |            0.033333 |             0.189003 |                0.153571 |                 0.185799 |
@@ -113,5 +117,5 @@ Grid Search :
 | Women              |            0.579154 |             0.442695 |                0.589971 |                 0.445623 |
 
 
-<img width="1400" height="600" alt="gridSearchFoldNew" src="https://github.com/user-attachments/assets/dfc4d645-662d-4b7a-87dd-531708ec84c5" />
+
 
