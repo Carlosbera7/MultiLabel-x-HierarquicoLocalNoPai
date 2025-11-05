@@ -20,7 +20,6 @@ Essa configuração foi aplicada tanto na abordagem Multilabel Global quanto na 
 | **colsample_bytree** | Proporção de colunas (features) usadas por árvore. <br>→ Aumenta a diversidade entre as árvores e melhora a generalização.     |
 
 
-<img width="1400" height="600" alt="graph" src="https://github.com/user-attachments/assets/ade496f0-12f0-4d3b-9004-7703a5c9ce32" />
 
 ------------------------------------------------------------------------------------------------------------------------------------
 Optuna:
