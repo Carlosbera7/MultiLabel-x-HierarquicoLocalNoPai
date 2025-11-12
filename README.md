@@ -52,6 +52,21 @@ Optuna:
 optuna por fold : 
 <img width="1400" height="600" alt="optuna por fold" src="https://github.com/user-attachments/assets/1aa0ce76-3fd8-42b7-bfaa-c0dcaebbae5d" />
 
+  
+
+Melhor parametro Geral : 
+
+objective": "binary:logistic",
+    "eval_metric": "logloss",        
+    "max_depth": 4,
+    "learning_rate":  0.145192689133182,
+    "n_estimators": 440,
+    "subsample": 0.5054945946218856,
+    "colsample_bytree": 0.747819692180028,
+
+    
+<img width="1400" height="600" alt="optuna geral" src="https://github.com/user-attachments/assets/a1a087a2-5899-41de-aaad-48ecd4f699d5" />
+
 ------------------------------------------------------------------------------------------------------------------------------------
 Grid Search :
 
