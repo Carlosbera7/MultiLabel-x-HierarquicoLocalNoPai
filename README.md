@@ -146,5 +146,20 @@ XGB_PARAMS = {
 | Women              |            0.579154 |             0.442695 |                0.589971 |                 0.445623 |                  0.624596 |                   0.443187 |                      0.624771 |                       0.450174 |
 | **MÉDIA**          |          **0.2817** |           **0.3261** |              **0.2931** |               **0.3087** |                **0.2982** |                 **0.2793** |                    **0.3097** |                     **0.3198** |
 
+Para ambas as abordagens de classificação, plana e hierárquica, os seguintes hiperparâmetros do \texttt{XGBoost} foram mantidos fixos:
+
+    objective: binary:logistic (função objetivo para tarefas de classificação binária)
+    eval_metric: logloss (métrica de avaliação por log-loss)
+    device: cuda (execução em GPU)
+
+A otimização concentrou-se nos parâmetros abaixo, conforme os intervalos definidos:
+
+    n_estimators: 100 a 1000 (número máximo de árvores a serem criadas no modelo)
+    learning_rate: 0,001 e 0,3 (escala logarítmica)
+    max_depth: 1 a 10 (profundidade máxima da árvore)
+    subsample: 0,05 a 1,0 (proporção de amostras por árvore)
+    colsample_bytree: 0,05 a 1,0 (fração de atributos por árvore)
+    min_child_weight: 1 a 20 (mínimo de instâncias por nó folha)
+
 
 
