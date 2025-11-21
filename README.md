@@ -161,5 +161,37 @@ A otimização concentrou-se nos parâmetros abaixo, conforme os intervalos defi
     colsample_bytree: 0,05 a 1,0 (fração de atributos por árvore)
     min_child_weight: 1 a 20 (mínimo de instâncias por nó folha)
 
+| Label                | F1 Médio (Local no Pai) | F1 Médio (Multilabel) |
+|---------------------|------------------------:|----------------------:|
+| Fat.women           | 0.793026               | 0.712968              |
+| Body                | 0.774056               | 0.737845              |
+| Fat.people          | 0.771810               | 0.713508              |
+| Ugly.people         | 0.764381               | 0.682302              |
+| Ugly.women          | 0.731110               | 0.657494              |
+| Sexism              | 0.476666               | 0.595224              |
+| Women               | 0.451467               | 0.606187              |
+| Refugees            | 0.436596               | 0.254013              |
+| Migrants            | 0.429644               | 0.211190              |
+| Homophobia          | 0.403977               | 0.501557              |
+| Lesbians            | 0.401788               | 0.555606              |
+| Homossexuals        | 0.396994               | 0.506226              |
+| Hate.speech         | 0.558165               | 0.558165              |
+| Racism              | 0.279572               | 0.099487              |
+| Men                 | 0.228970               | 0.094444              |
+| Black.people        | 0.220044               | 0.061905              |
+| Feminists           | 0.206405               | 0.145238              |
+| Trans.women         | 0.166667               | 0.133333              |
+| Religion            | 0.163420               | 0.100000              |
+| Ideology            | 0.161116               | 0.071515              |
+| Gays                | 0.143824               | 0.110714              |
+| Immigrants          | 0.133333               | 0.133333              |
+| Muslims             | 0.106667               | 0.100000              |
+| Transexuals         | 0.100000               | 0.000000              |
+| Left.wing.ideology  | 0.065000               | 0.000000              |
+| Islamists           | 0.000000               | 0.000000              |
+| OtherLifestyle      | 0.000000               | 0.000000              |
+| Origin              | 0.000000               | 0.000000              |
+| **Média Geral**     | **0.334454**            | **0.308972**          |
+
 
 
