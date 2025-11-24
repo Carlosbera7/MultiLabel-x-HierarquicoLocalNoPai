@@ -161,6 +161,18 @@ A otimização concentrou-se nos parâmetros abaixo, conforme os intervalos defi
     colsample_bytree: 0,05 a 1,0 (fração de atributos por árvore)
     min_child_weight: 1 a 20 (mínimo de instâncias por nó folha)
 
+
+    XGB_PARAMS = {
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",        
+    "max_depth": 9,
+    "learning_rate":  0.05338110611294492,
+    "n_estimators": 599,
+    "subsample": 0.5137721323530091,
+    "colsample_bytree": 1.0,
+    "min_child_weight": 0.3788045037848077
+}
+
 | Label               | Local no Pai (Folds) | Multilabel (Folds) | Local no Pai (Geral) | Multilabel (Geral) |
 |---------------------|---------------------:|--------------------:|----------------------:|--------------------:|
 | Fat.women           | 0.751048            | 0.695740            | 0.793026             | 0.712968           |
